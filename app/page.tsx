@@ -1,9 +1,11 @@
-import AuthForm from './src/AuthForm'
+import AuthForm from "./auth/page";
 
 export default function Home() {
   return (
+    <div>
       <div>
-        <AuthForm/>
+        <AuthForm />
       </div>
-  )
+    </div>
+  );
 }
