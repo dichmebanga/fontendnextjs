@@ -9,6 +9,7 @@ export const handleData = async (url: string, method: string, data: any = null) 
       data: data,
       // withCredentials:true,
       headers: {
+        'Content-Type': 'multipart/form-data',
         // Authorization: `Bearer ${token}`,
       },
     });

@@ -53,10 +53,10 @@ function dashboard() {
           src="/imagesHuman.png"
         />
         <div className="w-[673px] left-[117px] top-[363px] absolute text-black text-[70px] font-bold font-['Inter'] uppercase leading-[117px]">
-          Learn with me
+          OUTLAND
         </div>
         <div className="left-[117px] top-[457px] absolute text-black text-3xl font-light font-['Inter'] leading-[39px] tracking-[9px]">
-          www.dev.to
+          {/* www.dev.to */}
         </div>
       </div>
     </div>

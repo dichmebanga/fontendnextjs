@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const DropdownComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const router = useRouter();
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -17,7 +20,9 @@ const DropdownComponent = () => {
       </button>
       {isOpen && (
         <ul className="absolute bg-white border rounded-md ml-2 w-32">
-          <li className="py-2 px-4 hover:bg-gray-100">Item 1</li>
+          <li className="py-2 px-4 hover:bg-gray-100">
+            <button onClick={() => router.push("/import")}>Import File</button>
+          </li>
           <li className="py-2 px-4 hover:bg-gray-100">Item 2</li>
           <li className="py-2 px-4 hover:bg-gray-100">Item 3</li>
           {/* Thêm các mục danh sách khác tại đây */}
